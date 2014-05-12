@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>pelmanilsm</title>
+  <style>
+    input {
+     font-size: 18px;
+    }
+   </style>
+</head>
+<body>
+  <h1>pelmanism</h1>
+  <input type="button" id="card_0" value="?" onclick="flip(0);">
+  <input type="button" id="card_1" value="?" onclick="flip(1);"><br>
+  <input type="button" id="card_2" value="?" onclick="flip(2);">
+  <input type="button" id="card_3" value="?" onclick="flip(3);"><br>
+  <script>
+    //0011
+    
+    var cards = [],CARD_NUM = 4;
+    function initCards() {
+     var num,cardIndex;
+    
+     for (var i = 0;i < CARD_NUM;i++){
+	num = Math.floor(i/2);
+
+	cardIndex = Math.floor(Math.random() * CARD_NUM);
+     }
+    }
+    initCards();
+  </script>
+</body>
+</head>
+</html>

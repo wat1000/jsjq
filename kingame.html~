@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head><meta charset="utf-8">
+<title>kingame</title></head>
+<body>
+  <h1>kingame</h1>
+  <p>何人？：<input type="text" id="num"></p>
+  <input type="button" value="王様曰く〜"　onclick="kingSaid();">
+  <p id="result"></p>
+  <script>
+    function kingSaid() {
+      var orders = [
+    'ペガサス流星拳せよ',
+    '北斗百裂拳せよ',
+    'ほめよ',
+    'あがめよ'
+      ];
+    
+    var order = orders[Math.floor(Math.random() * orders.length)];
+    console.log(order);
+    }
+
+  </script>
+</body>
+</html>
